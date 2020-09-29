@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import MainGrid from './components/MainGrid';
 import Header from './components/Header';
-import UserData from './components/UserData';
 
 const App: React.FC = () => {
   
   return(
-    <div>
+    <div className= "App">
       <Header/>
-      <UserData/>
+      <MainGrid/>
     </div>
   )
 }

@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Header() {
+
+  function home() {
+    window.location.reload();
+  }
   const classes = useStyles();
 
   return (
@@ -24,7 +28,7 @@ export default function Header() {
       <AppBar position="static"  style= {{background: '#9bbaf2'}}>
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            React Quiz
+            <a onClick= {home} style= {{cursor: 'pointer'}}>React Quiz</a>
           </Typography>
         </Toolbar>
       </AppBar>
